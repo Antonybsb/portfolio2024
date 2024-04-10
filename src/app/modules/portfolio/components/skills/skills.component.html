@@ -1,0 +1,23 @@
+<section id="skills" class="mb-32 text-center">
+  <h2>
+    <p class=" text-neutral-800 mb-16 text-3xl font-medium">
+      Atualmente estou me desenvolvendo nas seguintes
+      tecnologias:
+    </p>
+  </h2>
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center justify-center gap-2 p-4 ">
+
+      <div class="flex flex-wrap gap-3 justify-center">
+        @for (item of arraySkills(); track item) {
+        <div
+          class="w-20 h-20 p-4 border flex justify-center items-center transition ease-in-out delay-150 bg-purple-900   hover:bg-indigo-500 duration-300">
+          <img [src]="item.src"
+            class="w-20 h-20 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 text-purple-500 duration-300"
+            [alt]="item.alt" />
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

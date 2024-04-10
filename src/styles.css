@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manjari:wght@100;400;700&display=swap");
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-surface;
+    @apply bg-white;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-body-dark;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+p {
+  @apply leading-[1.6];
+}
+
+@font-face {
+}
+
+.btn-curriculo {
+  @apply w-32 h-10 flex items-center justify-center  bg-purple-800 text-purple-100 rounded text-lg font-medium shadow-sm hover:bg-opacity-85 hover:shadow-xl transition-all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* background-image: linear-gradient(to right, #6b21a8, #020617); */
+  background-color: #fafafa;
+}
+
+/* Remover barra de rolagem */
+body::-webkit-scrollbar {
+  display: none;
+}

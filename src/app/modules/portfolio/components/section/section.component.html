@@ -1,0 +1,33 @@
+<!-- h-full bg-[url('./assets/backgrounds/2.jpg')] flex justify-center items-center -->
+<section id="#" class="h-full bg-emerald-600">
+  <div class="container">
+    <div class="flex flex-col gap-12 justify-around">
+      <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center mt-12">
+          <div class="h-24 w-24 rounded-full overflow-hidden ring ring-purple-800 ring-offset-4 mt-16">
+            <img class="object-cover h-34" src="./assets/foto/IMG_7021.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="w-80 mx-auto text-center flex items-center justify-center">
+        <p class="text-3xl text-purple-100 font-title">
+          Ola, <span class="font-semibold">Antony aqui !</span><br />
+          Sou desenvolvedor front-end e construo aplicações para a
+          <span class="text-purple-800 font-title font-semibold"> WEB.</span>
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-3">
+        <a href="./assets/curriculo/CURRICULO_2024.pdf" target="_blank" class="btn-curriculo">
+          Curriculo
+        </a>
+        <div class="flex flex-row items-center justify-center">
+          @for (item of arraySocialIcons(); track item) {
+          <a [href]="item.href" target="_blank">
+            <img [src]="item.src" class="h-8 ml-3" [alt]="item.alt" />
+          </a>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

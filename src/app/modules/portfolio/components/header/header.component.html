@@ -1,0 +1,88 @@
+<header>
+  <nav class=" bg-purple-900 fixed top-0 p-3  w-full pt-1 pb-1 z-50">
+    <div class="container mx-auto p-3 flex justify-between">
+      <div class="flex items-center">
+        <a href="#" class="flex-shrink-0">
+          <img class="h-12" src="./assets/logo/AntonyDiego_Logo_branca.png" alt="">
+        </a>
+      </div>
+      <div class="flex justify-center items-center flex-row">
+        <div class="hidden md:block ">
+          <div class="flex flex-row mx-auto space-x-4">
+            <div class="h-24 w-16 flex justify-center items-center relative group">
+              <a href="#home" class="text-white text-xl font-medium hover:text-emerald-300">Início</a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-emerald-300 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100">
+              </div>
+            </div>
+            <div class="h-24 w-16 flex justify-center items-center relative group">
+              <a href="#dicas" class="text-white text-xl font-medium hover:text-emerald-300">Dicas</a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-emerald-300 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100">
+              </div>
+            </div>
+            <div class="h-24 w-16 flex justify-center items-center relative group">
+              <a href="#portfolio" class="text-white text-xl font-medium hover:text-emerald-300">Portfolio</a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-emerald-300 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100">
+              </div>
+            </div>
+            <div class="h-24 w-16 flex justify-center items-center relative group">
+              <a href="#skills" class="text-white text-xl font-medium hover:text-emerald-300">Skills</a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-emerald-300 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100">
+              </div>
+            </div>
+            <div class="h-24 w-16 flex justify-center items-center relative group">
+              <a href="#blog" class="text-white text-xl font-medium hover:text-emerald-300">Blog</a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-emerald-300 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100">
+              </div>
+            </div>
+            <div class="h-24 w-16 flex justify-center items-center relative group">
+              <a href="#contato" class="text-white text-xl font-medium hover:text-emerald-300">Contato</a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-emerald-300 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="-mr-2 flex md:hidden">
+        <button (click)="toggleSidebar()" type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-emerald-600 focus:outline-none focus:bg-emerald-600 focus:text-white transition duration-150 ease-in-out"
+          aria-label="Menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    @if(isSidebarVisible) {
+    <div class="md:hidden " *ngIf="isSidebarVisible">
+      <div class="px-2 pt-2 pb-3 sm:px-3 ">
+        <a href="#home"
+          class="hover:bg-emerald-600 text-white block px-3  py-2 rounded-md text-base font-medium  ">Início</a>
+        <a href="#dicas"
+          class="hover:bg-emerald-600 text-white block px-3 py-2 rounded-md text-base font-medium">Dicas</a>
+        <a href="#portfolio"
+          class="hover:bg-emerald-600 text-white block px-3 py-2 rounded-md text-base font-medium  ">Portfolio</a>
+        <a href="#skills"
+          class="hover:bg-emerald-600 text-white block px-3 py-2 rounded-md text-base font-medium  ">Skills</a>
+        <a href="#blog"
+          class="hover:bg-emerald-600 text-white block px-3 py-2 rounded-md text-base font-medium  ">Blog</a>
+        <a href="#contato"
+          class="hover:bg-emerald-600 text-white block px-3 py-2 rounded-md text-base font-medium  ">Contato</a>
+
+      </div>
+    </div>
+    }
+
+  </nav>
+
+</header>

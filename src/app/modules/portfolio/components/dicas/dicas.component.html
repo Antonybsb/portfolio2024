@@ -1,0 +1,29 @@
+<section id="dicas" class="mb-32 text-center bg-indigo-100">
+  <div class="container p-14 my-24 mx-auto md:px-6">
+    <h2>
+      <p class=" text-neutral-800 mb-16 text-3xl font-medium">
+        Pensando em expandir as possíbilidades do seu negócio na WEB? <br>
+        <span class="text-2xl font-normal text-neutral-500">6 Dicas para quem deseja começar um negócio online:</span>
+      </p>
+    </h2>
+    <div class="mt-16 grid gap-x-6 md:grid-cols-3 lg:gap-x-12 gap-5">
+      @for (item of arrayDicas(); track item) {
+      <div class="mb-12 md:mb-0">
+        <div class="mb-6 inline-block  rounded-md border bg-purple-200 p-4">
+          <img [src]="item.src" class="h-6 w-6" alt="">
+        </div>
+        <h5>
+          <p class="mb-4 text-lg font-bold text-neutral-800 font-title">
+            {{ item.title }}
+          </p>
+        </h5>
+        <p class="text-neutral-500 font-title text-base leading-6">
+          {{ item.desc }}
+        </p>
+      </div>
+      }
+
+
+    </div>
+  </div>
+</section>
